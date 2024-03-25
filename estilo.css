@@ -1,0 +1,186 @@
+/* Definindo a codificação de caracteres UTF-8 */
+@charset "UTF-8";
+
+/* Importando fontes do Google Fonts para uso no estilo da página */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* Definindo variáveis de cor no root (raiz) para serem utilizadas posteriormente */
+:root{
+    --cor0: #D4DFC7;
+    --cor1: #647AA3;
+    --cor2: #0D1B2A;
+}
+
+/* Resetando margens e preenchimentos padrão para todos os elementos */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilo global do corpo da página */
+body{
+    background-color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilo do cabeçalho da página */
+header{
+    background-color: var(--cor2);
+    min-height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Estilo do título no cabeçalho */
+header > h1{
+    color: rgb(255, 255, 255);
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 4em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.329);
+    margin: 0px;
+}
+
+/* Estilo da barra de navegação */
+nav{
+    background-color: var(--cor1);
+    padding: 20px;
+    box-shadow: -4px 8px 7px rgba(0, 0, 0, 0.11);
+    text-align: center;
+}
+
+/* Estilo dos links na barra de navegação */
+nav > a{
+   color: white; 
+   font-family:"Comic Neue", cursive;
+   font-weight: bolder;
+   font-size: 1.2em;
+   max-width: 400px;
+   padding: 10px;
+   text-decoration: none;
+   font-weight: bold;
+   transition-duration: .5s;
+}
+
+/* Efeito de hover nos links da barra de navegação */
+nav > a:hover{
+    background-color: var(--cor2);
+    color: cor0;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Estilo do conteúdo principal da página */
+main{
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+/* Estilo do título principal */
+main h1{
+    font-family:"Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+    color: black;
+    font-size: 2.5em;
+}
+
+/* Estilo dos parágrafos no conteúdo principal */
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main li {
+    padding-left: 25px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+
+/*Fomulario Contato*/
+
+#titulo-formulario{
+    text-align: center;
+    padding: 10px;
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: -1px 2px 4px rgba(0, 0, 0, 0.164);
+}
+
+form {
+    font-family:"Comic Neue", cursive;
+    font-weight: bold;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--cor1);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--cor2);
+    transition: .5s;
+}
+
+/* Estilo do rodapé da página */
+
+footer{
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+} 
